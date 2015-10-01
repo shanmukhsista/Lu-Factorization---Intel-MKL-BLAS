@@ -1,0 +1,7 @@
+A blas level 3 implementation has been done for the LU factorization . I have tested it for various sizes as inputs to the matmat_ function. The value for the resid parameter will increase as the matrix size increases when we use the checkLU method to reconstruct the entire matrix. 
+
+The performance of lu factorization does depend on the block size and may vary on multiple machines and depends on multiple factors.
+
+Before starting coding of the assignment, i discussed the matlab scripts for the assignment, fortran code, pivoting logic and mkl reference documentation with Shreya and Shambhavi. 
+
+i have tested my code on silo for matrix sizes higher than 1000 and got the performance results. Performance timings do vary based on the block size and the matrix size. I have included lumatmat.c, lumatvec.c and make.inc as they are the files I have changed. to run it on silo, i did a module load intel and gcc.
